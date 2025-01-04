@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Platform</title>
+</head>
+<body>
+    <!-- HTML Content -->
+    <header>
+        <h1>My Video Platform</h1>
+        <button class="theme-toggle" onclick="toggleTheme()">Switch to Dark Theme</button>
+    </header>
+
+    <div class="container">
+        <div class="upload-section">
+            <h2>Upload a Video</h2>
+            <input type="text" id="video-title" placeholder="Video Title">
+            <textarea id="video-description" placeholder="Video Description"></textarea>
+            <input type="file" id="video-file" accept="video/*">
+            <button onclick="uploadVideo()">Upload</button>
+        </div>
+
+        <div id="videos">
+            <!-- Video cards will appear here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Video Platform</p>
+    </footer>
+
+    <style>
