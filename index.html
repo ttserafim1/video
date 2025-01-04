@@ -11,6 +11,7 @@
     <header>
         <h1>My Video Platform</h1>
         <button class="theme-toggle" onclick="toggleTheme()">Switch to Dark Theme</button>
+        <button class="auth-toggle" onclick="toggleAuthModal()">Login / Register</button>
     </header>
 
     <div class="container">
@@ -24,6 +25,17 @@
 
         <div id="videos">
             <!-- Video cards will appear here -->
+        </div>
+    </div>
+
+    <div id="auth-modal" class="auth-modal hidden">
+        <div class="auth-content">
+            <span class="close" onclick="toggleAuthModal()">&times;</span>
+            <h2>Login / Register</h2>
+            <input type="text" id="auth-username" placeholder="Username">
+            <input type="password" id="auth-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="register()">Register</button>
         </div>
     </div>
 
